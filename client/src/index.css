@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-gray-300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-bold;
+}
+
+a {
+    @apply text-blue-400 hover:text-blue-300;
+}
+
+/* Optional: Customize scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+}
